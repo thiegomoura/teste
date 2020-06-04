@@ -8,9 +8,7 @@ import Footer from './pages/Footer';
 function App() {
   return (
     <div className="App">
-    <Header />
     <Home />
-    <Footer />
     </div>
   );
 }
