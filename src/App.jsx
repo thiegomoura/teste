@@ -6,9 +6,7 @@ import {
   Link
 } from "react-router-dom";
 import './App.css';
-import Header from './pages/Header';
 import Home from './pages/Home';
-import Footer from './pages/Footer';
 import Dweller from './pages/Dweller';
 
 

@@ -15,11 +15,9 @@ export default () => {
         <main>
           <h1>Seu markeplace de resíduos.</h1>
           <p>Ajudamos pessoas a encontrarem ponto de coletas</p>
-          <Button>Tap me!</Button>
-          <a href="">
+          <a href="#">
             <span>></span>
             <strong>Cadastre um ponto de coleta</strong>
-              
           </a>
         </main>
       </div>
