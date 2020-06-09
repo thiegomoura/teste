@@ -13,7 +13,7 @@ body {
   }
 
   #page-home {
-    height: 100vh;
+    height: 80vh;
   
     background: url('../../assets/home-background.svg') no-repeat 600px bottom;
   }
