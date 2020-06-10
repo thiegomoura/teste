@@ -8,6 +8,7 @@ import {
 import './App.css';
 import Home from './pages/Home';
 import Dweller from './pages/Dweller';
+import FormDweller from './pages/components/FormDweller'
 
 
 function App() {
@@ -32,6 +33,9 @@ function App() {
           </Route>
           <Route path="/dweller">
             <Dweller />
+          </Route>
+          <Route path='/create' >
+            <FormDweller />
           </Route>
         </Switch>
       </div>

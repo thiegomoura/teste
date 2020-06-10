@@ -1,7 +1,6 @@
 import React from 'react';
 import logo from '../../assets/logo.svg';
 import './styles.css';
-import { Button } from '@material-ui/core';
 
 
 export default () => {

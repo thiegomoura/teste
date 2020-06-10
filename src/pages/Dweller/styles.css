@@ -1,0 +1,23 @@
+.grid{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+
+    
+}
+
+ul{
+    padding: 20px;
+    list-style-type: none;
+}
+
+li.lista{
+    background: paleturquoise;
+    margin: 5px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+li.lista-item{
+    padding-left: 20px;
+}
