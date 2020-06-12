@@ -10,13 +10,12 @@ export default () => {
         <header>
           <img src={logo} alt="Ecoleta"/>
         </header>
-
         <main>
-          <h1>Seu markeplace de resíduos.</h1>
-          <p>Ajudamos pessoas a encontrarem ponto de coletas</p>
+          <h1>Seu gerenciador financeiro.</h1>
+          <p>Ajudamos universitários desocupados a terem mais tempo disponível.</p>
           <a href="#">
-            <span>></span>
-            <strong>Cadastre um ponto de coleta</strong>
+            <span></span>
+            <strong>Acessar</strong>
           </a>
         </main>
       </div>

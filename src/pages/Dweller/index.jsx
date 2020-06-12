@@ -1,13 +1,10 @@
-import React, {Component} from 'react'
+import React, {Component, Label} from 'react'
 import api from '../../services/api';
 import { Grid } from '@material-ui/core';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem'
 import ListItemText from '@material-ui/core/ListItemText'
 import Avatar from '@material-ui/core/Avatar'
-import AccountCircle from '@material-ui/icons/AccountCircle'
-import Delete from '@material-ui/icons/Delete'
-import AddButton from '../components/addButton'
 import './styles.css';
 
 class Dweller extends Component {
@@ -35,22 +32,23 @@ class Dweller extends Component {
     return(
         <div>
             <h1>Moradores</h1>
-            <Grid container className="grid">
-            <List className="lista">
+            <div container className="grid">
+            <ul className="lista">
                 {dwellers.map(dweller =>(
-                    
-                <ListItem className="lista-item">
-                    <Avatar>
-                        <AccountCircle />
-                    </Avatar>
-                    <ListItemText primary={dweller.name} secondary={dweller.telephone}></ListItemText>
-                    <p></p>
-                    <Delete style={{color: '#bdbdbd'}}>Excluir</Delete>
-                </ListItem>
+                <li className="lista-item">
+                    <div className="grid-item">
+                    Nome:{dweller.name}
+                    </div>
+                    <div className="grid-item">
+                    Telefone:
+                    {dweller.telephone}
+                    </div>
+                    <hr></hr>
+
+                </li>
                 ))}
-            </List>
-            </Grid>
-            <AddButton />
+            </ul>
+            </div>
         </div>
     )
     }

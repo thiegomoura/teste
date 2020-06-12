@@ -6,18 +6,29 @@
     
 }
 
+h1 {
+    text-align: center;
+    padding-top: 1em;
+}
+
 ul{
     padding: 20px;
     list-style-type: none;
+    
 }
 
-li.lista{
-    background: paleturquoise;
+.grid{
     margin: 5px;
     padding: 20px;
     border-radius: 10px;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
-li.lista-item{
-    padding-left: 20px;
+.grid-item{
+    display: flex;
+    padding-bottom: 5px;
+    flex-direction: row;
+    justify-items: right;
+    margin: 5px;
 }

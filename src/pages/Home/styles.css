@@ -15,7 +15,7 @@ body {
   #page-home {
     height: 80vh;
   
-    background: url('../../assets/home-background.svg') no-repeat 600px bottom;
+    background: url('../../assets/home-background.svg') no-repeat 900px bottom;
   }
   
   #page-home .content {
@@ -94,7 +94,7 @@ body {
   }
   
   #page-home .content main a:hover {
-    background: #2FB86E;
+    background: #E63029;
   }
   
   @media(max-width: 900px) {

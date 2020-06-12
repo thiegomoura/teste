@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #34CB79;
-    --title-color: #322153;
+    --primary-color: #E7403B;
+    --title-color: #2E3547;
     --text-color: #6C6C80;
   }
   
@@ -24,4 +24,15 @@
     color: var(--title-color);
     font-family: Ubuntu;
   }
-  
+
+  ul.menu {
+    list-style-type: none;
+    color: var(--title-color);
+    background-color: var(--primary-color);
+    display: flex; 
+  }
+
+  .menu-item{
+    margin-right: 10px;
+    text-decoration: none;
+  }

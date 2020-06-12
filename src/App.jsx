@@ -8,7 +8,6 @@ import {
 import './App.css';
 import Home from './pages/Home';
 import Dweller from './pages/Dweller';
-import FormDweller from './pages/components/FormDweller'
 
 
 function App() {
@@ -16,17 +15,14 @@ function App() {
     <div className="App">
     <Router>
       <div>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
+        <ul className="menu">
+          <li className="menu">
+            <Link to="/"><h2 className="menu-item">Início</h2></Link>
           </li>
-          <li>
-            <Link to="/dweller">Dweller</Link>
+          <li className="menu">
+            <Link to="/dweller"><h2 className="menu-item">Moradores</h2></Link>
           </li>
         </ul>
-
-        <hr />
-
         <Switch>
           <Route exact path="/">
             <Home />
@@ -35,7 +31,6 @@ function App() {
             <Dweller />
           </Route>
           <Route path='/create' >
-            <FormDweller />
           </Route>
         </Switch>
       </div>
