@@ -10,10 +10,41 @@
     box-sizing: border-box;
   }
   
+  div.App{
+    display: grid;
+    grid-template: 90vh 10vh/auto 11fr;
+    grid-template-areas:
+          "a m"
+          "a f";
+  }
+  
   body {
     background: #F0F0F5;
     -webkit-font-smoothing: antialiased;
     color: var(--text-color);
+  }
+
+  main {
+    grid-area: m;
+  }
+
+  header {
+    background: var(--primary-color);
+    color: var(--text-color);
+    width: 130px;
+    border-radius: 0px 38px 38px 0px;
+    grid-area: a;
+  }
+
+  footer {
+    background: silver;
+    grid-area: f;
+    
+  }
+  footer > span {
+    display: grid;
+    justify-items: center;
+    align-items: center;
   }
   
   body, input, button {
@@ -23,16 +54,4 @@
   h1, h2, h3, h4, h5, h6 {
     color: var(--title-color);
     font-family: Ubuntu;
-  }
-
-  ul.menu {
-    list-style-type: none;
-    color: var(--title-color);
-    background-color: var(--primary-color);
-    display: flex; 
-  }
-
-  .menu-item{
-    margin-right: 10px;
-    text-decoration: none;
   }

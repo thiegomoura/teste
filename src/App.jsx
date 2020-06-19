@@ -14,26 +14,35 @@ function App() {
   return (
     <div className="App">
     <Router>
-      <div>
-        <ul className="menu">
+      <header>
+        <ul className="menu-container">
+          <div className="item-container">
           <li className="menu">
-            <Link to="/"><h2 className="menu-item">Início</h2></Link>
+            <Link to="/"><h2 className="menu-item">In</h2></Link>
           </li>
           <li className="menu">
-            <Link to="/dweller"><h2 className="menu-item">Moradores</h2></Link>
+            <Link to="/dweller"><h2 className="menu-item">Mo</h2></Link>
           </li>
+          </div>
         </ul>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/dweller">
-            <Dweller />
-          </Route>
-          <Route path='/create' >
-          </Route>
-        </Switch>
-      </div>
+      </header>
+      <main>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/dweller">
+          <Dweller />
+        </Route>
+        <Route path='/create' >
+        </Route>
+      </Switch>
+      </main>
+      <footer>
+      <span>&Copy TM Acessoria</span>
+      </footer>
+      <div>
+    </div>
     </Router>
     </div>
   );

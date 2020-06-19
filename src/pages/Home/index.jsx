@@ -1,15 +1,15 @@
 import React from 'react';
 import logo from '../../assets/logo.svg';
+import Header from '../Header';
 import './styles.css';
 
 
 export default () => {
   return (
     <div id="page-home">
+      <Header />
       <div className="content">
-        <header>
-          <img src={logo} alt="Ecoleta"/>
-        </header>
+        <img src={logo} alt="Ecoleta"/>
         <main>
           <h1>Seu gerenciador financeiro.</h1>
           <p>Ajudamos universitários desocupados a terem mais tempo disponível.</p>
